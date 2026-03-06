@@ -1,7 +1,10 @@
 <?php
 // String
 $nom = "Fatemeh";
-// Int
+// Integer
+
+
+
 $age = 33; 
 // Float
 $prix = 10.5; 
@@ -13,6 +16,10 @@ $alpha = ["A", "BCD"];
 $rien = null; 
 
 // Affichage avec var_dump
+// tableau multidimentionel
+
+
+
 var_dump($nom);
 var_dump($age);
 var_dump($prix);

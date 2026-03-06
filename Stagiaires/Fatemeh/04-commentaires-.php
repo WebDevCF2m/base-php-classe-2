@@ -9,5 +9,5 @@ echo "!-- ceci sera un commentaire front --";
 ?>
 <p> ceci est d'html</p>
 <?php
-echo "<p>ceci aussi mais traité en" ".strtoupper("backend")</p>";
+echo "<p> ceci aussi mais traité en ".strtoupper("backend") </p>";
 ?>

@@ -21,3 +21,7 @@ var_dump($Float);
 echo "Conversion en BOOL : ";
 var_dump($Bool);
 ?>
+
+
+
+
