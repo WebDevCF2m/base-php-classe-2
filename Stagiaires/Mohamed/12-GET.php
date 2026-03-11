@@ -1,3 +1,6 @@
+<?php 
+var_dump($_GET);
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,13 +9,6 @@
     <title>Document</title>
 </head>
 <body>
-    <section id="acceuil">
-        <h1>bonjour</h1>
-    </section>
+    <a href="index">index</a>
 </body>
 </html>
-
-<?php
-$acceuil = $_GET["acceuil"]
-var_dump($acceuil);
-?>
