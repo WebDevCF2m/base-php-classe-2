@@ -28,4 +28,5 @@ $stagiaires = [
 
 // Accéder au github de Marie
 echo $stagiaires["WEBDEV03"]["Sites"]["github"];
+var_dump ($stagiaires)
 // https://github.com/marie
