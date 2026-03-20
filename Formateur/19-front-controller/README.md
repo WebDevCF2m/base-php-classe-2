@@ -25,6 +25,33 @@ Il contiendra des **valeurs confidentielles**, on doit le rajouter au `.gitignor
 config.php
 ```
 
+#### Création du contenu de config.php
+
+```php
+<?php
+# Formateur/19-front-controller/config.php
+
+/*
+* Ce fichier à la racine du projet, va contenir les constantes
+* Indispensables à son fonctionnement, Il ne doit pas être suivi
+*/
+
+# Racine de notre projet quelque soit le serveur
+# __DIR__ est une constante magique (change suivant l'emplacement)
+# Dans une constante (on ne peut la réécrire)
+const PATH_TO_PROJECT_ROOT = __DIR__;
+
+# Pages acceptées pour notre site, données sensibles 
+# (pas dans le README.md en principe ;-))
+const NOS_PAGES = ['accueil', 'contact','actualites'];
+```
+
+### Création d'une copie envoyée sur github
+
+On va copier `config.php` sous le nom de `config.base.php` et retirer les valeurs dangereuses! Dans notre exemple je retire les pages valides du tableau, ce n'est pas vraiment de la sécurité
+
+On pourra, à la maison par exemple ou un autre utiliseur, recréer `config.php` en partant de `config.base.php`
+
 ### Création des dossiers et fichiers
 
 - création du dossier `public`, c'est le seul accès qu'on laissera aux utilisateurs du site (**Sécurité!**)
